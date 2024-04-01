@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="assets/css/search.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-content">
+            <img src="assets/images/search.gif" alt="Logo" class="first" />
+            <h1>Multi_Search_Engine</h1>
+            <img src="assets/images/search.gif" alt="Logo" class="second" />
+        </div>
+    </nav>
+
+    <!-- Search Container -->
+    <div class="search-container">
+        <h1 style="font-size: 3rem;">Search</h1>
+        <form class="search-form" action="https://www.google.com/search" method="GET">
+            <input type="text" class="search-input" name="q" placeholder="Search  here...." autofocus>
+            <button type="submit" class="search-button">Google Search</button>
+        </form>
+        <div class="buttons-container">
+            <button class="search-provider-button" id="gemini" onclick="searchWithGemini()">Search with Gemini</button>
+            <button style="border: 1px solid black;" class="search-provider-button" id="wikipedia" onclick="searchWithWikipedia()">Search with Wikipedia</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Multi_Search_Engine....Developed by Vishal Javare.....
+    </footer>
+
+    <!-- JavaScript functions -->
+    <script>
+        function searchWithGemini() {
+            window.location.href = "https://www.example.com/search?provider=gemini";
+        }
+
+        function searchWithWikipedia() {
+            window.location.href = "https://www.wikipedia.org/search";
+        }
+    </script>
+</body>
+</html>
