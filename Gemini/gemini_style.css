@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    background: url('./assets/images/gemini.avif');
+    background-image: url(../assets/images/gemini.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -37,8 +37,9 @@ main {
     font-size: 20px;
     font-weight: 700;
     color: white;
-    background: linear-gradient(45deg, #2f2ff7, #b282e2, #ff00ff);
+    background-color: #8f71b1;;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 #latest_container {
