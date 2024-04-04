@@ -1,13 +1,13 @@
-body{
+body {
     margin: 0px;
     font-family: sans-serif;
-    background: url('https://rahlegal.in/wp-content/uploads/2015/10/Wikipedia-Profile.jpg');
+    background: url('./assets/images/Wiki.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
 
-main{
+main {
     width: 100%;
     height: 200px;
     position: sticky;
@@ -17,18 +17,20 @@ main{
     justify-content: center;
 }
 
-#input_search{
+#input_search {
     height: 45px;
-    width: 800px;
+    width: 90%; /* Adjusted width */
+    max-width: 800px; /* Added max-width */
     border-radius: 50px;
     border: none;
     padding-left: 20px;
     font-size: larger;
 }
 
-#search_button{
+#search_button {
     height: 45px;
-    width: 120px;
+    width: 30%; /* Adjusted width */
+    max-width: 120px; /* Added max-width */
     border-radius: 50px;
     border: none;
     font-family: 'Courier New', Courier, monospace;
@@ -39,9 +41,9 @@ main{
     cursor: pointer;
 }
 
-.latest_container{
+.latest_container {
     border-radius: 10px;
-    margin: 0 100px;
+    margin: 0 5%; /* Adjusted margin */
     background-color: rgb(253, 253, 253);
     display: flex;
     flex-wrap: wrap;
@@ -50,4 +52,30 @@ main{
     word-spacing: 2px;
     word-break: keep-all;
     display: none;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    #input_search {
+        width: 80%;
+    }
+    #search_button {
+        width: 40%;
+    }
+    .latest_container {
+        margin: 0 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #input_search {
+        width: 70%;
+    }
+    #search_button {
+        width: 50%;
+    }
+    .latest_container {
+        margin: 0;
+        padding: 10px;
+    }
 }
