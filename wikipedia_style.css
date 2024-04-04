@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background: url('https://rahlegal.in/wp-content/uploads/2015/10/Wikipedia-Profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 200px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#input_search{
+    height: 45px;
+    width: 800px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: larger;
+}
+
+#search_button{
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(3, 3, 3);
+    background: linear-gradient(45deg, #2f2ff7, #b282e2, #ff00ff);
+    cursor: pointer;
+}
+
+.latest_container{
+    border-radius: 10px;
+    margin: 0 100px;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 20px;
+    word-spacing: 2px;
+    word-break: keep-all;
+    display: none;
+}

@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background: url('https://learn.slicemypage.com/wp-content/uploads/2023/10/gemini-ai.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 200px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#input_search{
+    height: 45px;
+    width: 800px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: larger;
+}
+
+#search_button{
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(45deg, #2f2ff7, #b282e2, #ff00ff);
+    cursor: pointer;
+}
+
+/* #search_button:active {
+    background: linear-gradient(45deg, #ff0000, #00ff00);   
+} */
+
+#latest_container{
+    border-radius: 10px;
+    margin: 0 30px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    word-break: break-all;
+    line-height: 1.5;
+    overflow-y: scroll;
+    padding: 20px;
+    word-spacing: 2px;
+    word-break: keep-all;
+    display: none;
+}
+
+

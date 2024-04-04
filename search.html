@@ -20,13 +20,12 @@
     <!-- Search Container -->
     <div class="search-container">
         <h1 style="font-size: 3rem;">Search</h1>
-        <form class="search-form" action="https://www.google.com/search" method="GET">
-            <input type="text" class="search-input" name="q" placeholder="Search  here...." autofocus>
-            <button type="submit" class="search-button">Google Search</button>
-        </form>
+        
+            <!-- <input type="text" class="search-input" name="q" placeholder="Search  here...." autofocus> -->
+            <a href="./google.html" style="text-decoration: none;"><button  class="search-button search-form">Google Search</button></a>
         <div class="buttons-container">
-            <button class="search-provider-button" id="gemini" onclick="searchWithGemini()">Search with Gemini</button>
-            <button style="border: 1px solid black;" class="search-provider-button" id="wikipedia" onclick="searchWithWikipedia()">Search with Wikipedia</button>
+            <a href="./gemini.html"><button class="search-provider-button" id="gemini" onclick="searchWithGemini()">Search with Gemini</button></a>
+            <a href="./wikipedia.html"><button style="border: 1px solid black;" class="search-provider-button" id="wikipedia" onclick="searchWithWikipedia()">Search with Wikipedia</button></a>
         </div>
     </div>
 
@@ -36,7 +35,7 @@
     </footer>
 
     <!-- JavaScript functions -->
-    <script>
+    <!-- <script>
         function searchWithGemini() {
             window.location.href = "https://www.example.com/search?provider=gemini";
         }
@@ -44,6 +43,8 @@
         function searchWithWikipedia() {
             window.location.href = "https://www.wikipedia.org/search";
         }
-    </script>
+    </script> -->
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
